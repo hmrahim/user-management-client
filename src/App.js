@@ -14,8 +14,9 @@ function App() {
     <div className=" min-h-screen  md:px-0 bg-base-100">
      <Nav/>
       <Routes>
-        <Route path="/" element={<CreateUser/>} />
+        <Route path="/" element={<AllUser/>} />
         <Route path="/alluser" element={<AllUser/>}/>
+        <Route path="/createuser" element={<CreateUser/>}/>
         <Route path="/edituser/:id" element={<EditUser/>}/>
       </Routes>
 

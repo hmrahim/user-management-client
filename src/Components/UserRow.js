@@ -40,12 +40,12 @@ const UserRow = ({user,refetch,index}) => {
     refetch()
     return (
         <tr>
-        <th>{index+1}</th>
-        <td>{user.name}</td>
-        <td>{user.username}</td>
-        <td>{user.email}</td>
-        <td>{user.phone}</td>
-        <td>
+        <th align="center">{index+1}</th>
+        <td align="center">{user.name}</td>
+        <td align="center">{user.username}</td>
+        <td align="center">{user.email}</td>
+        <td align="center">{user.phone}</td>
+        <td align="center">
             <button onClick={()=> deleteUser(user._id)} className='btn btn-error mr-4'>Delete</button>
             <Link to={`/edituser/${user._id}`} className='btn btn-info'>Edit</Link>
             </td>
